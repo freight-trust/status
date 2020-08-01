@@ -152,9 +152,7 @@ Here is a breakdown of options available:
 
 - `pinned`: if you set this to `top` or `belowheader` and set its status to `in_progress`, the event will be taken out of the regular display and will show at the very top of each page or just below the header, respectively. This is meant to display an important message in a prominent manner to all visitors such as a security warning. Once the status is reset to anything else but `in_progress`, the event will not be displayed anywhere anymore.
 
-Pinned items also have a simplified layout:
-
-<p align="center"><img src="https://cdn.weeblrpress.net/clearstatus/features/pinned-item.png" alt="Pinned message example"></p>
+Pinned items also have a simplified layout
 
 - `duration` is only used for **scheduled** event. Use that field to tell visitors how long that scheduled event is supposed to last. It's free text, can be "about 5 mn", "1 hour" or "1h"
 
@@ -170,7 +168,7 @@ Once the problem is fully solved, you can set its `status` option to `resolved`.
 
 - `affected`: a list of components that are affected by the event. Add one component per line and use exactly the same name you used on your configuration file.
 
-- `twitterFeed`: an optional Twitter feed or collections. If provided, the feed will be embedded in the issue card as long as it is marked as `in_progress`. We specifically recommend creating a [Twitter collection](https://developer.twitter.com/en/docs/tweets/curate-a-collection/overview/overview.html) for this purpose. This way only tweets related to that specific issue will be displayed.
+- `twitterFeed`: an optional Twitter feed or collections. 
 
 - `enableComments`: another excellent way to communicate directly with your users. Clearstatus can include commenting on each issue individual page. You can enable/disable commenting per issue. The only pre-requisite is to set your [Disqus shortname](https://disqus.com) under the `disqusShortname` option in the global configuration file. You will of course need to set up a Disqus account for your status page to make this work.
 
@@ -178,29 +176,6 @@ Once the problem is fully solved, you can set its `status` option to `resolved`.
 
 - `body`: the body is the free text area located after the `---` line (do not touch or remove this line by the way). It is just plain text you can write to describe it. You can add to, remove from or update that text to your liking using markdown for nicer formatting. 
  
-## Getting started (manual setup)
-
-Assuming you are familiar with git and/or Hugo, you may prefer to setup ClearStatus using a local git repo and then possibly host your status page elsewhere than Netlify.
-
-ClearStatus comes in 2 flavors or rather 2 git repositories:
-
-- `clearstatustheme` is a **Hugo theme**. You can check it out and use it in any Hugo web site. It has an ExampleSite folders with a sample config.yml file you should use. 
-
-- `clearstatus` is a **Hugo site**. It's basically an empty site with the `clearstatustheme` setup as a git submodule, a config.yml file and some sample content. This is what is deployed to Netlify when using the automated setup. **It's the preferred method deployment**.
-
-Alternatively, you can clone only the `clearstatustheme` repository in your own repo and just configure it for your own hosting as needed.
-
-Make sure to clone the `clearstatustheme` with **submodules** or else you will only get the main site without the Clearstatus theme. For instance:
-
-````
-git clone --recurse-submodules https://github.com/weeblrpress/clearstatus.git mystatuspage
-````
-
-````  
-git submodule foreach git pull origin master
-``file can be used through your status page custom layouts. Only CSS classes actually used will be included to generate the smallest possible file.
-```
-````
 ## Credits
 
 This project is loosely inspired by [CState](https://github.com/cstate/cstate) and started out both out of different requirements and the desire to work with Hugo, Netlify, Go templates and such.

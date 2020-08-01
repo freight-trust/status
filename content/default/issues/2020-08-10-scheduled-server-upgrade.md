@@ -1,10 +1,10 @@
 ---
-title: Main site server upgrade
+title: Besu Node Upgrade
 
 draft: false
 
-# Full date: 2019-03-29 17:26:09
-date: 2019-04-12
+# Full date: 2020-08-10 17:26:09
+date: 2020-08-10
 
 # Status: "resolved" | "in_progress" | "scheduled"
 status: "scheduled"
@@ -26,7 +26,7 @@ max_severity: down
 # current_severity: ok | disrupted | down | monitoring | maintenance
 current_severity: down
 
-# Full date: 2019-03-29 17:26:09
+# Full date: 2020-03-29 17:26:09
 resolved_on:
 
 # Affected components, must use exact names defined in site config
@@ -39,16 +39,16 @@ affected:
 # See:  https://help.twitter.com/en/using-twitter/embed-twitter-feed
 #
 # - Profile: Display public Tweets from any user on Twitter:
-#    https://twitter.com/weeblrpress
+#    https://twitter.com/freighttrust
 #  
 # - Likes: Show all Tweets a specific user has marked as likes.
-#    https://twitter.com/TwitterDev/likes
+#    https://twitter.com/freighttrustnet/likes
 #
 # - List: Show Tweets from public Lists that you own and/or subscribe to.
-#    https://twitter.com/TwitterDev/lists/national-parks
+#    https://twitter.com/freighttrustnet/lists/national-parks
 # 
 # - Collection: Show Tweets from a curated collection.
-#    https://twitter.com/TwitterDev/timelines/539487832448843776
+#    https://twitter.com/freighttrustnet/timelines/539487832448843776
 #
 # - Moment: Show Tweets from a public moment.
 #    https://twitter.com/i/moments/625792726546558977
@@ -67,13 +67,13 @@ section: issue
 # Short code available in content to display current date
 # in a short format. For instance for issue updates.
 
-# {{< track "2019-03-26 15:31:06" >}}
+# {{< track "2020-08-12 15:31:06" >}}
 # {{< track "" >}}
 
 ## Enter below issue description and subsequent updates if any
 ---
 
-Our hosting company needs to perform some software updates on our main website server. These updates require restarting the machine which implies some downtime.
+We need to perform some software updates on our main website server. These updates require restarting the machine which implies some downtime.
 \
 This maintenance should not last more than a few minutes or cause any other perturbation.
 \
